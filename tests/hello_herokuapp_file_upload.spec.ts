@@ -5,5 +5,4 @@ test('file upload', async ({ preparedPage }) => {
   await preparedPage.getByRole('link', { name: 'File Upload' }).click();
   await expect(preparedPage.getByRole('button', { name: 'Upload' })).toBeVisible();
 
-  await preparedPage.close();
 });

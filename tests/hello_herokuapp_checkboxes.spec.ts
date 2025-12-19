@@ -8,6 +8,5 @@ await expect(preparedPage.getByRole('checkbox').first()).not.toBeChecked();
 await expect(preparedPage.getByRole('checkbox').nth(1)).toBeChecked();
 await expect(preparedPage.getByRole('checkbox').nth(1)).toBeChecked();
   
-await preparedPage.close();
 
 });

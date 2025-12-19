@@ -10,6 +10,11 @@ export const test = base.extend<{ preparedPage: any }>({
     
     // Use the page in the test
     await use(page);
+ 
+    // Cleanup after test
+    await page.close();
+    
+
   },
 });
 
